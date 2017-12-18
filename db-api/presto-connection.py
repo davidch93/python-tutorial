@@ -5,6 +5,7 @@ configPr = {
     'port': '8080'
 }
 
+
 def main():
     cursor = presto.connect(**configPr).cursor()
     cursor.execute('show tables')
@@ -12,5 +13,7 @@ def main():
         print(row[0])
     cursor.close()
 
+
 if __name__ == '__main__':
     main()
+
