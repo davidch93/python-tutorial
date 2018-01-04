@@ -1,6 +1,5 @@
-import httplib2
 import googlesheet_credentials
-
+import httplib2
 from apiclient import discovery
 
 
